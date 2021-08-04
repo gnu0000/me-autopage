@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   <meta charset="UTF-8">
+   <title>One Page Navigation CSS Menu</title>
+   <meta name="credit" content="Layout copied from an example by Alberto Hartzet">
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👽</text></svg>" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+   <link rel="stylesheet" href="./index.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script type="module" src="index.js"></script>
+</head>
+<body>
+   <template id="tab">
+      <div class="ct" id="t{idx}">
+      </div>
+   </template>
+   <template id="menu">
+      <ul id="menu">
+      </ul>
+   </template>
+   <template id="menu-item">
+      <a href="#t{idx}"><li class="icon fa {icon}" id="m{idx}"></li></a>
+   </template>
+   <template id="page">
+      <div class="page" id="p{idx}">
+         <section class="icon fa {icon}">
+         </section>
+      </div>
+   </template>
+   <template id="block">
+      <div>
+         <div class="title">{title}</div>
+         <div class="hint">
+            {text}
+            <div class="note">{note}</div>
+         </div>
+      </div>
+   </template>
+   <template id="list">
+      <ul></ul>
+   </template>
+   <template id="item">
+      <li>
+         <a href="{git}" class="src"><img src="/images/git20.svg" ></a>
+         <a href="{href}" class="item">{name}</a>
+         {text}
+      </li>
+   </template>
+   <template id="linkitem">
+      <h2><a href="{href}">{name}</a></h2>
+   </template>
+
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+</body>
+<script>
+   // This is not normally needed!
+   // This redirects the home icon to my real site homepage
+   $(document).on("page-done", () => $("#menu a:first-child").attr("href", "/"));
+</script>
+</html>
