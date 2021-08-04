@@ -77,6 +77,27 @@
                {"name": "Misc Perl 2"               , "href": "/bin/eblio.pm.txt"                                    }
             ]
          }]
+      },
+      {
+         "icon": "fa-bullhorn",
+         "blocks": [{
+            "title": "Test Page #1",
+            "text": "This is test page. This shows an example of adding additional pages via the page1.json file"
+         }]
+      },
+      {
+         "icon": "fa-bath",
+         "blocks": [{
+            "title": "Test Page #2",
+            "text": "This is test page. This shows an example of adding additional pages via the page1.json file"
+         }]
+      },
+      {
+         "icon": "fa-bomb",
+         "blocks": [{
+            "title": "Test Page #3",
+            "text": "This is test page. This shows an example of adding additional pages via the page1.json file"
+         }]
       }
    ]
 }
